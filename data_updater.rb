@@ -111,10 +111,10 @@ class DataUpdater
   end
 
   def options
-    { host: ENV['DB_HOST'],
-      username: ENV['DB_USER'],
-      password: ENV['DB_PWD'],
-      database: ENV['DB_DB'] }
+    { host: ENV['SONGS_DB_HOSTNAME'],
+      username: ENV['SONGS_DB_USER'],
+      password: ENV['SONGS_DB_PWD'],
+      database: ENV['SONGS_DB_NAME'] }
   end
 
   def client
